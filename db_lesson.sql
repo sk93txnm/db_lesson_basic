@@ -60,7 +60,7 @@ VALUES
 
 
 UPDATE people
-department_id = 1
+SET department_id = 1
 WHERE department_id IS NULL;
 
 
@@ -71,5 +71,14 @@ SELECT name,age
 FROM people
 WHERE gender = 1
 ORDER BY age DESC;
+
+
+
+
+peopleテーブルから、department_idカラムが１のレコードを取得し、
+name、email、ageカラムの値を取得する。
+また、取得したdepartment_id=1の順序をcreated_at（レコードが作られた日時）昇順に並べ替えて表示する。 
+
+
 
 
